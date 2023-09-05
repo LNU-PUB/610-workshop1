@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#content {
+  width: 600px;
+}
+
+#keyboard {
+  display: flex;
+  flex-direction: row;
+}
+
+#keyboard > div:first-child {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#keyboard > div+div {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  padding: 5px
+}
